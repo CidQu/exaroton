@@ -1,6 +1,6 @@
 import 'package:exaroton/exaroton.dart';
 
-/*void main() {
-  var awesome = Awesome();
-  print('awesome: ${awesome.isAwesome}');
-}*/
+void main() async {
+  var example = Exaroton('API_KEY');
+  print(await example.accountInfo(''));
+}
