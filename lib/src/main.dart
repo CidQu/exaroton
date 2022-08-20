@@ -63,8 +63,8 @@ class Exaroton {
     return info.toString();
   }
 
-  Future<String> servers() async {
-    var endpoint = 'servers/';
+  Future<String> servers(String serverId) async {
+    var endpoint = 'servers/$serverId/';
     var notParsedJSON = await postSystem(endpoint);
     var decodedJSON = jsonDecode(notParsedJSON);
     var info = decodedJSON;
@@ -72,7 +72,7 @@ class Exaroton {
   }
 
   Future<String> restartServer(String serverId) async {
-    var endpoint = 'servers/${serverId}/restart/';
+    var endpoint = 'servers/$serverId/restart/';
     var notParsedJSON = await postSystem(endpoint);
     var decodedJSON = jsonDecode(notParsedJSON);
     var info = decodedJSON;
