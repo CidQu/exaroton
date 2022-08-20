@@ -27,7 +27,7 @@ Now you are ready to use Exaroton. Little Note: all server commands need ServerI
 var my_serverID = await exaroton.findServerID();
 ```
 
-You should recieve an List() something like this.
+You should recieve a List() something like this.
 ```
 Server Name - ServerID, Server Name 2 - ServerID2
 ```
