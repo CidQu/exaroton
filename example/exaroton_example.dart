@@ -2,5 +2,6 @@ import 'package:exaroton/exaroton.dart';
 
 void main() async {
   var example = Exaroton('API_KEY');
-  print(await example.accountInfo(''));
+  var xd = await example.shareLog('SERVER_ID');
+  print(xd['url']);
 }
