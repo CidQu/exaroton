@@ -121,7 +121,7 @@ class Exaroton {
     } else if (data == 'software') {
       var verified = decodedJSON['data']['software'];
       return verified.toString();
-    } else if (data == 'software') {
+    } else if (data == 'shared') {
       var verified = decodedJSON['data']['shared'];
       return verified.toString();
     } else {
